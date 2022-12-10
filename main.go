@@ -21,7 +21,7 @@ func main() {
 	// check for OK value, because otherwise return would be nil and
 	// type conversion will panic
 	if ok {
-		rstr := r.(string) // convert cached value from interface{} to real type
+		rstr := r // convert cached value from interface{} to real type
 		fmt.Printf("value before expiration is found: %v, value: %v\n", ok, rstr)
 	}
 
